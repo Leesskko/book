@@ -17,7 +17,7 @@ class CreateBookArticleTable extends Migration
             $table->increments('id');
             $table->integer('bookid');
             $table->string('articlename');
-            $table->string('content');
+            $table->text('content');
             $table->timestamps();
             $table->softDeletes();
         });
